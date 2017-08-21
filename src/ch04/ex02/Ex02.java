@@ -15,11 +15,11 @@ public class Ex02 {
 
         System.out.println(labeledPoint);
 
-        Point otherPoint = new Point(1, 2);
+        Point otherPoint = new Point(3, 4);
 
         System.out.println(Objects.equals(point, otherPoint));
 
-        LabeledPoint otherLabeledPoint = new LabeledPoint(3, 4, "crystal");
+        LabeledPoint otherLabeledPoint = new LabeledPoint(3, 4, "star");
 
         System.out.println(Objects.equals(labeledPoint, otherLabeledPoint));
     }

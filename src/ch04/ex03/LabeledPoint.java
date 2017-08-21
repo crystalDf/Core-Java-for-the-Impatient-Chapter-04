@@ -1,4 +1,4 @@
-package ch04.ex02;
+package ch04.ex03;
 
 import java.util.Objects;
 
@@ -34,6 +34,6 @@ public class LabeledPoint extends Point {
 
     @Override
     public int hashCode() {
-        return Objects.hash(getX(), getY(), label);
+        return Objects.hash(x, y, label);
     }
 }
