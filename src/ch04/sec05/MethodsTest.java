@@ -26,6 +26,8 @@ public class MethodsTest {
                 );
             }
 
+            System.out.println();
+
             clazz = clazz.getSuperclass();
         }
     }
