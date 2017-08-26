@@ -1,13 +1,14 @@
 package ch04.sec05;
 
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Arrays;
 
 public class MethodsTest {
 
-    public static void main(String[] args) throws ClassNotFoundException {
+    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
 
         String className = "java.lang.String";
 
@@ -30,5 +31,13 @@ public class MethodsTest {
 
             clazz = clazz.getSuperclass();
         }
+
+        Employee employee = new Employee("Star", 10000);
+
+        Method method = employee.getClass().getMethod("setName", String.class);
+
+        method.invoke(employee, "Crystal");
+
+        System.out.println(employee.getName());
     }
 }
