@@ -2,7 +2,7 @@ package ch04.sec05;
 
 import java.lang.reflect.Field;
 
-public class FieldsTest {
+public class FieldTest {
 
     public static void main(String[] args) throws IllegalAccessException, NoSuchFieldException {
 
